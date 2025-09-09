@@ -27,7 +27,9 @@ export function Header({ language, setLanguage }: HeaderProps) {
               alt="EVSExplorer" 
               className="h-16 w-auto"
             />
-            <p className="text-sm text-muted-foreground">OCPP Charge Point Monitoring and Testing</p>
+            <div className="hidden sm:flex">
+              <p className="text-sm text-muted-foreground">OCPP Charge Point Monitoring and Testing</p>
+            </div>
           </div>
 
           {/* Navigation */}

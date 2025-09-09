@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { translations } from './translations';
 
 interface HeroProps {
@@ -82,8 +82,8 @@ export function Hero({ language }: HeroProps) {
                 color: '#0E1E42'
               }}
             >
-              <Play className="mr-2 w-5 h-5" />
               {t.learnMore}
+              <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
 
@@ -91,7 +91,7 @@ export function Hero({ language }: HeroProps) {
           <div className="mt-16 relative">
             <div className="flex justify-center items-center space-x-8">
               {/* Connection Indicators */}
-              <div className="hidden lg:flex flex-col items-center space-y-4">
+              <div className="hidden sm:flex flex-col items-center space-y-4">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="flex items-center space-x-2">
                     <div 
@@ -128,7 +128,7 @@ export function Hero({ language }: HeroProps) {
               </div>
 
               {/* More Connection Indicators */}
-              <div className="hidden lg:flex flex-col items-center space-y-4">
+              <div className="hidden sm:flex flex-col items-center space-y-4">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="flex items-center space-x-2">
                     <div className="w-16 h-2 bg-gray-200 rounded-full overflow-hidden">
