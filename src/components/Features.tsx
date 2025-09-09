@@ -63,7 +63,7 @@ export function Features({ language }: FeaturesProps) {
             return (
               <Card 
                 key={index}
-                className="group hover:shadow-lg transition-shadow duration-300 border-gray-200 hover:border-gray-300"
+                className="group border-gray-200 hover:border-gray-400"
               >
                 <CardContent className="p-6">
                   <div className="flex flex-col items-start space-y-4">
@@ -100,12 +100,7 @@ export function Features({ language }: FeaturesProps) {
         {/* Additional Visual Section */}
         <div className="mt-20 text-center">
           <div className="bg-gray-50 rounded-2xl p-12">
-            <h3 
-              className="mb-6"
-              style={{ color: '#0E1E42' }}
-            >
-              OCPP 2.0.1 Compliance Testing
-            </h3>
+            <h3 className="mb-6" style={{ color: '#0E1E42' }}>OCPP 2.0.1 Compliance Testing</h3>
             
             {/* Protocol Flow Visualization */}
             <div className="flex flex-wrap justify-center items-center gap-6 mb-8">
@@ -117,18 +112,28 @@ export function Features({ language }: FeaturesProps) {
                 >
                   <Zap className="w-8 h-8 text-white" />
                 </div>
-                <p className="text-sm text-gray-600">Charge Point</p>
+                <p className="text-sm text-gray-600">
+                  {language === 'en' ? 'Charge Point' : 'Ladestation'}
+                </p>
               </div>
 
               {/* Arrow */}
               <div className="hidden sm:block">
                 <div className="flex items-center">
                   <div 
+                    className="w-0 h-0 mr-05"
+                    style={{
+                      borderRight: '6px solid #32AEE2',
+                      borderTop: '3px solid transparent',
+                      borderBottom: '3px solid transparent'
+                    }}
+                  />
+                  <div 
                     className="w-12 h-1 rounded-full"
                     style={{ backgroundColor: '#32AEE2' }}
                   />
                   <div 
-                    className="w-0 h-0 ml-1"
+                    className="w-0 h-0 ml-05"
                     style={{
                       borderLeft: '6px solid #32AEE2',
                       borderTop: '3px solid transparent',
@@ -136,6 +141,7 @@ export function Features({ language }: FeaturesProps) {
                     }}
                   />
                 </div>
+                <div className="text-xs text-gray-400">OCPP</div>
               </div>
 
               {/* EVSExplorer Server */}
@@ -154,11 +160,19 @@ export function Features({ language }: FeaturesProps) {
                 {/* Upper arrow to Dashboard */}
                 <div className="flex items-center">
                   <div 
+                      className="w-0 h-0 mr-05"
+                      style={{
+                        borderRight: '6px solid #32AEE2',
+                        borderTop: '3px solid transparent',
+                        borderBottom: '3px solid transparent'
+                      }}
+                  />
+                  <div 
                     className="w-12 h-1 rounded-full"
                     style={{ backgroundColor: '#32AEE2' }}
                   />
                   <div 
-                    className="w-0 h-0 ml-1"
+                    className="w-0 h-0 ml-05"
                     style={{
                       borderLeft: '6px solid #32AEE2',
                       borderTop: '3px solid transparent',
@@ -166,15 +180,23 @@ export function Features({ language }: FeaturesProps) {
                     }}
                   />
                 </div>
-                
+                <div className="text-xs text-gray-400">REST API</div>
                 {/* Lower arrow to 3rd Party Tool */}
                 <div className="flex items-center">
+                  <div 
+                    className="w-0 h-0 mr-05"
+                    style={{
+                      borderRight: '6px solid #32AEE2',
+                      borderTop: '3px solid transparent',
+                      borderBottom: '3px solid transparent'
+                    }}
+                  />
                   <div 
                     className="w-12 h-1 rounded-full"
                     style={{ backgroundColor: '#32AEE2' }}
                   />
                   <div 
-                    className="w-0 h-0 ml-1"
+                    className="w-0 h-0 ml-05"
                     style={{
                       borderLeft: '6px solid #32AEE2',
                       borderTop: '3px solid transparent',
@@ -206,103 +228,15 @@ export function Features({ language }: FeaturesProps) {
                     <Settings className="w-8 h-8 text-white" />
                   </div>
                   <p className="text-sm text-gray-600">
-                    {language === 'en' ? '3rd Party Tool' : 'Drittsoftware'}
+                    {language === 'en' ? '3rd Party Tool' : 'Drittanbieter Test-Werkzeug'}
                   </p>
                 </div>
               </div>
-
-              {/* Mobile layout - single arrows */}
-              <div className="lg:hidden flex items-center">
-                <div 
-                  className="w-12 h-1 rounded-full"
-                  style={{ backgroundColor: '#32AEE2' }}
-                />
-                <div 
-                  className="w-0 h-0 ml-1"
-                  style={{
-                    borderLeft: '6px solid #32AEE2',
-                    borderTop: '3px solid transparent',
-                    borderBottom: '3px solid transparent'
-                  }}
-                />
-              </div>
-
-              {/* Mobile Dashboard */}
-              <div className="lg:hidden text-center">
-                <div 
-                  className="w-20 h-20 rounded-full flex items-center justify-center mb-3 mx-auto"
-                  style={{ backgroundColor: '#A1C736' }}
-                >
-                  <Monitor className="w-8 h-8 text-white" />
-                </div>
-                <p className="text-sm text-gray-600">Dashboard</p>
-              </div>
             </div>
-
-            {/* Mobile 3rd Party Tool Row */}
-            <div className="lg:hidden flex flex-wrap justify-center items-center gap-6 mb-8">
-              <div className="text-center opacity-0">
-                <div className="w-20 h-20 mb-3 mx-auto" />
-                <p className="text-sm text-gray-600">Charge Point</p>
-              </div>
-              
-              <div className="flex items-center">
-                <div 
-                  className="w-12 h-1 rounded-full"
-                  style={{ backgroundColor: '#32AEE2' }}
-                />
-                <div 
-                  className="w-0 h-0 ml-1"
-                  style={{
-                    borderLeft: '6px solid #32AEE2',
-                    borderTop: '3px solid transparent',
-                    borderBottom: '3px solid transparent'
-                  }}
-                />
-              </div>
-
-              <div className="text-center">
-                <div 
-                  className="w-20 h-20 rounded-full flex items-center justify-center mb-3 mx-auto"
-                  style={{ backgroundColor: '#0E1E42' }}
-                >
-                  <Server className="w-8 h-8 text-white" />
-                </div>
-                <p className="text-sm text-gray-600">EVSExplorer</p>
-              </div>
-
-              <div className="flex items-center">
-                <div 
-                  className="w-12 h-1 rounded-full"
-                  style={{ backgroundColor: '#32AEE2' }}
-                />
-                <div 
-                  className="w-0 h-0 ml-1"
-                  style={{
-                    borderLeft: '6px solid #32AEE2',
-                    borderTop: '3px solid transparent',
-                    borderBottom: '3px solid transparent'
-                  }}
-                />
-              </div>
-
-              <div className="text-center">
-                <div 
-                  className="w-20 h-20 rounded-full flex items-center justify-center mb-3 mx-auto"
-                  style={{ backgroundColor: '#32AEE2' }}
-                >
-                  <Settings className="w-8 h-8 text-white" />
-                </div>
-                <p className="text-sm text-gray-600">
-                  {language === 'en' ? '3rd Party Tool' : 'Drittsoftware'}
-                </p>
-              </div>
-            </div>
-
             <p className="text-gray-600 max-w-3xl mx-auto">
               {language === 'en' 
                 ? 'Complete WebSocket communication with real-time monitoring, message validation, and comprehensive testing capabilities for OCPP 2.0.1 compliance. Use our built-in dashboard or integrate with your existing 3rd party test tools via our comprehensive REST API.'
-                : 'Vollständige WebSocket-Kommunikation mit Echtzeit-Überwachung, Nachrichten-Validierung und umfassenden Testfunktionen für OCPP 2.0.1 Compliance. Nutzen Sie unser integriertes Dashboard oder integrieren Sie Ihre bestehenden Drittsoftware-Testtools über unsere umfassende REST-API.'
+                : 'Vollständige WebSocket-Kommunikation mit Echtzeit-Überwachung, Nachrichten-Validierung und umfassenden Testfunktionen für OCPP 2.0.1 Compliance. Nutzen Sie unser integriertes Dashboard oder integrieren Sie Ihre bestehenden Drittanbieter Test-Werkzeuge mit unsere umfassende REST-API.'
               }
             </p>
           </div>

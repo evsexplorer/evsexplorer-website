@@ -46,7 +46,7 @@ export function Contact({ language }: ContactProps) {
                 {/* Contact Information */}
                 <div className="space-y-4">
                   <h3 style={{ color: '#0E1E42' }}>
-                    {language === 'en' ? 'Contact Our Sales Team' : 'Kontaktieren Sie unser Vertriebsteam'}
+                    {language === 'en' ? 'Contact us' : 'Kontaktieren Sie uns'}
                   </h3>
                   <p className="text-gray-600">
                     {language === 'en' 
@@ -71,7 +71,7 @@ export function Contact({ language }: ContactProps) {
                 <Button
                   onClick={handleContactClick}
                   size="lg"
-                  className="inline-flex items-center px-8 py-4"
+                  className="inline-flex items-center px-8 py-4 hover:shadow-lg hover:opacity-90"
                   style={{ backgroundColor: '#A1C736' }}
                 >
                   {t.contactButton}

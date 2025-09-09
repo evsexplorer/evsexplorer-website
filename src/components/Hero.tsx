@@ -22,8 +22,7 @@ export function Hero({ language }: HeroProps) {
     <section id="main-content" className="relative bg-gradient-to-br from-gray-50 to-white py-20 lg:py-32" role="banner">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div 
-          className="h-full w-full"
+        <div className="h-full w-full"
           style={{
             backgroundImage: `
               radial-gradient(circle at 1px 1px, #0E1E42 1px, transparent 0)
@@ -36,10 +35,11 @@ export function Hero({ language }: HeroProps) {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* Tagline */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full border border-gray-300 mb-8">
+          <div className="inline-flex items-center px-4 py-2 rounded-full border border-gray-300 mb-8"
+          style={{ backgroundColor: '#0E1E42' }}>
             <span 
               className="text-sm font-medium"
-              style={{ color: '#0E1E42' }}
+              style={{ color: 'white' }}
             >
               {t.tagline}
             </span>
@@ -65,7 +65,7 @@ export function Hero({ language }: HeroProps) {
             <Button 
               onClick={scrollToContact}
               size="lg"
-              className="inline-flex items-center px-8 py-4"
+              className="inline-flex items-center px-8 py-4 hover:shadow-lg hover:opacity-90"
               style={{ backgroundColor: '#32AEE2' }}
             >
               {t.getStarted}
@@ -76,7 +76,7 @@ export function Hero({ language }: HeroProps) {
               variant="outline"
               size="lg"
               onClick={scrollToFeatures}
-              className="inline-flex items-center px-8 py-4"
+              className="inline-flex items-center px-8 py-4 hover:shadow-lg"
               style={{ 
                 borderColor: '#0E1E42',
                 color: '#0E1E42'

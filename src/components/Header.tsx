@@ -25,8 +25,9 @@ export function Header({ language, setLanguage }: HeaderProps) {
             <img 
               src={evsexplorerLogo} 
               alt="EVSExplorer" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
+            <p className="text-sm text-muted-foreground">OCPP Charge Point Monitoring and Testing</p>
           </div>
 
           {/* Navigation */}
@@ -38,7 +39,7 @@ export function Header({ language, setLanguage }: HeaderProps) {
                 variant={language === 'en' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => setLanguage('en')}
-                className="px-3 py-1"
+                className="px-3 py-1 hover:opacity-90 hover:shadow-lg"
                 style={{ 
                   backgroundColor: language === 'en' ? '#0E1E42' : 'transparent',
                   borderColor: '#0E1E42',
@@ -51,7 +52,7 @@ export function Header({ language, setLanguage }: HeaderProps) {
                 variant={language === 'de' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => setLanguage('de')}
-                className="px-3 py-1"
+                className="px-3 py-1 hover:opacity-90 hover:shadow-lg"
                 style={{ 
                   backgroundColor: language === 'de' ? '#0E1E42' : 'transparent',
                   borderColor: '#0E1E42',
@@ -66,7 +67,7 @@ export function Header({ language, setLanguage }: HeaderProps) {
             <Button 
               onClick={scrollToContact}
               style={{ backgroundColor: '#32AEE2' }}
-              className="hover:opacity-90"
+              className="hover:opacity-90 hover:shadow-lg"
             >
               {t.contact}
             </Button>

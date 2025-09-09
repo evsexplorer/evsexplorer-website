@@ -5,8 +5,8 @@ export const translations = {
     
     // Hero
     tagline: 'Professional OCPP 2.0.1 Testing & Monitoring',
-    heroTitle: 'Advanced WebSocket Server for Charge Point Compliance',
-    heroDescription: 'EVSExplorer is a comprehensive OCPP 2.0.1 WebSocket server designed for monitoring and compliance testing of electric vehicle charge points. Control everything through our REST API for robust testing scenarios.',
+    heroTitle: 'Looking for the right tool to test your EV charge point?',
+    heroDescription: 'EVSExplorer is a comprehensive OCPP 2.0.1 WebSocket server designed for monitoring and compliance testing of electric vehicle charge points. Use our REST API to create your individual testing scenarios.',
     getStarted: 'Get Started',
     learnMore: 'Learn More',
     
@@ -16,16 +16,16 @@ export const translations = {
     
     features: [
       {
-        title: 'Core OCPP 2.0.1 Protocol',
-        description: 'Implements the complete OCPP 2.0.1 JSON-based protocol for seamless communication with charge points.'
+        title: 'OCPP 2.0.1 Protocol',
+        description: 'Implements the JSON-based OCPP 2.0.1 protocol for seamless communication with charge points.'
       },
       {
         title: 'Multi-Connection Support',
-        description: 'Handle connections from multiple charge points simultaneously with robust connection management.'
+        description: 'Handle connections from multiple charge points simultaneously.'
       },
       {
         title: 'Message Validation',
-        description: 'Validate all OCPP messages using the official OCPP 2.0.1 JSON schema for compliance testing.'
+        description: 'Validate incoming and outgoing OCPP messages using the official JSON schemata for compliance testing.'
       },
       {
         title: 'Real-time Dashboard',
@@ -33,47 +33,47 @@ export const translations = {
       },
       {
         title: 'Auto-Response System',
-        description: 'Define custom auto-responses to OCPP requests with user-defined responses or standard errors.'
+        description: 'Define custom auto-responses to OCPP requests with user-defined response or standard error messages.'
       },
       {
         title: 'Live Event Monitoring',
-        description: 'Track connection events, boot events, connector status updates, and transaction events in real-time.'
+        description: 'Track connection events like boot events, connector status updates or transaction events in real-time.'
       },
       {
-        title: 'Uptime Analytics',
-        description: 'Analyze online and offline periods of charge points for performance insights.'
+        title: 'Connection Stability Analytics',
+        description: 'Analyze online and offline periods of charge points for connection stability insights.'
       },
       {
-        title: 'Connection Control',
+        title: 'WebSocket Control',
         description: 'Close WebSocket connections or block re-connections for defined testing periods.'
       },
       {
         title: 'Message History',
-        description: 'Browse, filter, and search through raw OCPP JSON messages in comprehensive message history.'
+        description: 'Browse, filter and search in OCPP messages within a certain timeframe.'
       },
       {
         title: 'Custom Alerts',
-        description: 'Set up custom alerts to quickly react to abnormal charge point conditions.'
+        description: 'Set up custom alerts to quickly be notified about abnormal charge point conditions.'
       },
       {
         title: 'Transaction Visualization',
-        description: 'Visualize charging transactions with detailed meter value analysis and reporting.'
+        description: 'Visualize charging transactions for detailed meter value analysis and reporting.'
       },
       {
         title: 'REST API Control',
-        description: 'Control the entire system through comprehensive REST API endpoints for automation.'
+        description: 'Control the entire system through comprehensive REST API endpoints for test automation.'
       }
     ],
     
     // Contact
     contactTitle: 'Ready to Get Started?',
-    contactSubtitle: 'Contact our sales team to learn how EVSExplorer can streamline your OCPP testing workflow.',
+    contactSubtitle: 'Contact us to learn how EVSExplorer can streamline your OCPP testing workflow.',
     contactButton: 'Contact us',
     contactEmail: 'hello@evsexplorer.com',
     
     // Footer
     copyright: '© 2025 EVSExplorer. All rights reserved.',
-    hostedAt: 'Professional OCPP 2.0.1 testing solutions'
+    brandClaim: 'Professional OCPP 2.0.1 testing'
   },
   de: {
     // Header
@@ -81,74 +81,74 @@ export const translations = {
     
     // Hero
     tagline: 'Professionelles OCPP 2.0.1 Testing & Monitoring',
-    heroTitle: 'Erweiterte WebSocket-Server für Ladepunkt-Compliance',
-    heroDescription: 'EVSExplorer ist ein umfassender OCPP 2.0.1 WebSocket-Server für Überwachung und Compliance-Tests von Elektrofahrzeug-Ladepunkten. Steuern Sie alles über unsere REST-API für robuste Testszenarien.',
-    getStarted: 'Loslegen',
+    heroTitle: 'Auf der Suche nach dem richtigen Werkzeug, um Ihre EV-Ladestation zu testen?',
+    heroDescription: 'EVSExplorer ist ein umfangreicher OCPP 2.0.1 WebSocket-Server zur Überwachung und für Compliance-Tests von Elektrofahrzeug-Ladestationen. Nutzen Sie auch unsere REST-API um Ihre ganz speziellen Testszenarien zu erstellen.',
+    getStarted: 'Los geht\'s',
     learnMore: 'Mehr erfahren',
     
     // Features
-    featuresTitle: 'Umfassende OCPP 2.0.1 Lösung',
-    featuresSubtitle: 'Alles was Sie für professionelle Ladepunkt-Tests und Überwachung benötigen',
+    featuresTitle: 'Umfangreiche OCPP 2.0.1 Lösung',
+    featuresSubtitle: 'Alles, was Sie für professionelle Ladepunkt-Tests und Überwachung benötigen',
     
     features: [
       {
-        title: 'OCPP 2.0.1 Kern-Protokoll',
-        description: 'Implementiert das vollständige OCPP 2.0.1 JSON-basierte Protokoll für nahtlose Kommunikation mit Ladepunkten.'
+        title: 'OCPP 2.0.1 Protokoll',
+        description: 'Implementiert das JSON-basierte OCPP 2.0.1 Protokoll für die reibungslose Kommunikation mit Ladestationen.'
       },
       {
-        title: 'Multi-Verbindungsunterstützung',
-        description: 'Verwalten Sie Verbindungen von mehreren Ladepunkten gleichzeitig mit robustem Verbindungsmanagement.'
+        title: 'Unterstützung mehrerer Verbindungen',
+        description: 'Unterstützt Verbindungen von mehreren Ladepunkten gleichzeitig.'
       },
       {
         title: 'Nachrichten-Validierung',
-        description: 'Validierung aller OCPP-Nachrichten mit dem offiziellen OCPP 2.0.1 JSON-Schema für Compliance-Tests.'
+        description: 'Validierung aller eingehenden und ausgehenden OCPP-Nachrichten anhand der offiziellen JSON-Schemata für Compliance-Tests.'
       },
       {
         title: 'Echtzeit-Dashboard',
-        description: 'Überwachen Sie alle Ladepunkte mit umfassenden Statusinformationen in einem intuitiven Dashboard.'
+        description: 'Überwachen Sie alle Ladepunkte mit zahlreichen Statusinformationen in einem intuitiven Dashboard.'
       },
       {
-        title: 'Auto-Response System',
-        description: 'Definieren Sie benutzerdefinierte automatische Antworten auf OCPP-Anfragen oder Standardfehler.'
+        title: 'Automatische Antworten',
+        description: 'Legen Sie automatische Antworten auf OCPP-Anfragen als benutzerdefinierte Nachrichten oder Standardfehler fest.'
       },
       {
-        title: 'Live Event Monitoring',
-        description: 'Verfolgen Sie Verbindungsereignisse, Boot-Events, Connector-Status-Updates und Transaktionsereignisse in Echtzeit.'
+        title: 'Echtzeit-Überwachung',
+        description: 'Verfolgen Sie Verbindungsaufbau bzw. -ende, Anmeldung, Konnektor-Statusupdates oder Transaktionsereignisse in Echtzeit.'
       },
       {
-        title: 'Betriebszeit-Analyse',
-        description: 'Analysieren Sie Online- und Offline-Perioden von Ladepunkten für Leistungseinblicke.'
+        title: 'Analyse der Verbindungsstabilität',
+        description: 'Analysieren Sie Online- und Offline-Zeiträume von Ladepunkten um Einblick in die Stabilität der Onlineverbindung zu bekommen.'
       },
       {
-        title: 'Verbindungssteuerung',
-        description: 'Schließen Sie WebSocket-Verbindungen oder blockieren Sie Wiederverbindungen für definierte Testperioden.'
+        title: 'Kontrolle über Websockets',
+        description: 'Schließen Sie WebSocket-Verbindungen oder blockieren Sie Verbindungsversuche für definierte Zeiträume.'
       },
       {
         title: 'Nachrichten-Historie',
-        description: 'Durchsuchen, filtern und suchen Sie durch rohe OCPP JSON-Nachrichten in der umfassenden Historie.'
+        description: 'Analysieren, filtern und suchen Sie nach Inhalten in OCPP-Nachrichten innerhalb eines bestimmten Zeitraums.'
       },
       {
         title: 'Benutzerdefinierte Alarme',
-        description: 'Richten Sie benutzerdefinierte Alarme ein, um schnell auf abnormale Ladepunkt-Bedingungen zu reagieren.'
+        description: 'Richten Sie benutzerdefinierte Alarme ein, um schnell auf bestimmte Zustände einer Ladestation aufmerksam gemacht zu werden.'
       },
       {
-        title: 'Transaktions-Visualisierung',
-        description: 'Visualisieren Sie Ladevorgänge mit detaillierter Zählerwert-Analyse und Berichterstattung.'
+        title: 'Visualisierung von Ladevorgängen',
+        description: 'Visualisieren Sie Ladevorgänge zur detaillierten Messdaten-Analyse und Berichterstattung.'
       },
       {
         title: 'REST-API Steuerung',
-        description: 'Steuern Sie das gesamte System über umfassende REST-API-Endpunkte für Automatisierung.'
+        description: 'Steuern Sie das gesamte System über die umfangreiche REST-API um Ihre Tests zu automatisieren.'
       }
     ],
     
     // Contact
-    contactTitle: 'Bereit zum Start?',
-    contactSubtitle: 'Kontaktieren Sie unser Vertriebsteam, um zu erfahren, wie EVSExplorer Ihren OCPP-Test-Workflow optimieren kann.',
+    contactTitle: 'Bereit loszulegen?',
+    contactSubtitle: 'Kontaktieren Sie uns, um zu erfahren, wie EVSExplorer Ihren Test-Workflow optimieren kann.',
     contactButton: 'Kontaktieren Sie uns',
     contactEmail: 'hello@evsexplorer.com',
     
     // Footer
     copyright: '© 2025 EVSExplorer. Alle Rechte vorbehalten.',
-    hostedAt: 'Professionelle OCPP 2.0.1 Testlösungen'
+    brandClaim: 'Professionelle OCPP 2.0.1 Testlösung'
   }
 } as const;

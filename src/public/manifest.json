@@ -60,9 +60,9 @@
       ]
     },
     {
-      "name": "Contact Sales",
+      "name": "Contact us",
       "short_name": "Contact",
-      "description": "Contact our sales team",
+      "description": "Contact us for more information",
       "url": "/#contact",
       "icons": [
         {
