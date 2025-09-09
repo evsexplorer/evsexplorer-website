@@ -103,7 +103,7 @@ export function Features({ language }: FeaturesProps) {
             <h3 className="mb-6" style={{ color: '#0E1E42' }}>OCPP 2.0.1 Compliance Testing</h3>
             
             {/* Protocol Flow Visualization */}
-            <div className="flex flex-wrap justify-center items-center gap-6 mb-8">
+            <div className="hidden lg:flex flex-wrap justify-center items-center gap-6 mb-8">
               {/* Charge Point */}
               <div className="text-center">
                 <div 
@@ -118,7 +118,7 @@ export function Features({ language }: FeaturesProps) {
               </div>
 
               {/* Arrow */}
-              <div className="hidden sm:block">
+              <div className="block">
                 <div className="flex items-center">
                   <div 
                     className="w-0 h-0 mr-05"
@@ -156,7 +156,7 @@ export function Features({ language }: FeaturesProps) {
               </div>
 
               {/* Branching arrows container */}
-              <div className="hidden lg:flex flex-col items-center justify-center space-y-8">
+              <div className="flex flex-col items-center justify-center space-y-8">
                 {/* Upper arrow to Dashboard */}
                 <div className="flex items-center">
                   <div 
@@ -233,6 +233,115 @@ export function Features({ language }: FeaturesProps) {
                 </div>
               </div>
             </div>
+
+            {/* Mobile version of the protocol flow */}
+            <div className="lg:hidden flex flex-wrap justify-center items-center gap-6 mb-8">
+              {/* Charge Point */}
+              <div className="text-center">
+                <div 
+                  className="w-10 h-10 rounded-full flex items-center justify-center mb-3 mx-auto"
+                  style={{ backgroundColor: '#A1C736' }}
+                >
+                  <Zap className="w-4 h-4 text-white" />
+                </div>
+                <p className="text-xs text-gray-600">
+                  {language === 'en' ? 'Charge Point' : 'Ladestation'}
+                </p>
+              </div>
+
+              {/* Arrow */}
+              <div className="block">
+                <div className="flex items-center">
+                  <div 
+                    className="w-0 h-0 mr-05"
+                    style={{
+                      borderRight: '6px solid #32AEE2',
+                      borderTop: '3px solid transparent',
+                      borderBottom: '3px solid transparent'
+                    }}
+                  />
+                  <div 
+                    className="w-6 h-1 rounded-full"
+                    style={{ backgroundColor: '#32AEE2' }}
+                  />
+                  <div 
+                    className="w-0 h-0 ml-05"
+                    style={{
+                      borderLeft: '6px solid #32AEE2',
+                      borderTop: '3px solid transparent',
+                      borderBottom: '3px solid transparent'
+                    }}
+                  />
+                </div>
+                <div className="text-xs text-gray-400">OCPP</div>
+              </div>
+
+              {/* EVSExplorer Server */}
+              <div className="text-center relative">
+                <div 
+                  className="w-10 h-10 rounded-full flex items-center justify-center mb-3 mx-auto"
+                  style={{ backgroundColor: '#0E1E42' }}
+                >
+                  <Server className="w-4 h-4 text-white" />
+                </div>
+                <p className="text-xs text-gray-600">EVSExplorer</p>
+              </div>
+
+              {/* Arrow */}
+              <div className="block">
+                <div className="flex items-center">
+                  <div 
+                    className="w-0 h-0 mr-05"
+                    style={{
+                      borderRight: '6px solid #32AEE2',
+                      borderTop: '3px solid transparent',
+                      borderBottom: '3px solid transparent'
+                    }}
+                  />
+                  <div 
+                    className="w-6 h-1 rounded-full"
+                    style={{ backgroundColor: '#32AEE2' }}
+                  />
+                  <div 
+                    className="w-0 h-0 ml-05"
+                    style={{
+                      borderLeft: '6px solid #32AEE2',
+                      borderTop: '3px solid transparent',
+                      borderBottom: '3px solid transparent'
+                    }}
+                  />
+                </div>
+                <div className="text-xs text-gray-400">REST API</div>
+              </div>
+
+              {/* Right side - Dashboard and 3rd Party Tool */}
+              <div className="flex flex-col items-center space-y-8">
+                {/* Test Dashboard */}
+                <div className="text-center">
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center mb-3 mx-auto"
+                    style={{ backgroundColor: '#0E1E42' }}
+                  >
+                    <Monitor className="w-4 h-4 text-white" />
+                  </div>
+                  <p className="text-xs text-gray-600">Dashboard</p>
+                </div>
+
+                {/* 3rd Party Test Tool */}
+                <div className="text-center">
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center mb-3 mx-auto"
+                    style={{ backgroundColor: '#32AEE2' }}
+                  >
+                    <Settings className="w-4 h-4 text-white" />
+                  </div>
+                  <p className="text-xs text-gray-600">
+                    {language === 'en' ? '3rd Party Tool' : 'Drittanbieter Test-Werkzeug'}
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <p className="text-gray-600 max-w-3xl mx-auto">
               {language === 'en' 
                 ? 'Complete WebSocket communication with real-time monitoring, message validation, and comprehensive testing capabilities for OCPP 2.0.1 compliance. Use our built-in dashboard or integrate with your existing 3rd party test tools via our comprehensive REST API.'

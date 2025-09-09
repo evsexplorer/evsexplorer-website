@@ -91,7 +91,7 @@ export function Hero({ language }: HeroProps) {
           <div className="mt-16 relative">
             <div className="flex justify-center items-center space-x-8">
               {/* Connection Indicators */}
-              <div className="hidden sm:flex flex-col items-center space-y-4">
+              <div className="flex-col items-center space-y-4">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="flex items-center space-x-2">
                     <div 
