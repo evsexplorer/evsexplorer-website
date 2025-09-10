@@ -235,7 +235,7 @@ export function Features({ language }: FeaturesProps) {
             </div>
 
             {/* Mobile version of the protocol flow */}
-            <div className="lg:hidden flex flex-wrap justify-center items-center gap-6 mb-8">
+            <div className="lg:hidden flex flex-col items-center mb-8">
               {/* Charge Point */}
               <div className="text-center">
                 <div 
@@ -250,30 +250,16 @@ export function Features({ language }: FeaturesProps) {
               </div>
 
               {/* Arrow */}
-              <div className="block">
-                <div className="flex items-center">
-                  <div 
-                    className="w-0 h-0 mr-05"
-                    style={{
-                      borderRight: '6px solid #32AEE2',
-                      borderTop: '3px solid transparent',
-                      borderBottom: '3px solid transparent'
-                    }}
-                  />
-                  <div 
-                    className="w-6 h-1 rounded-full"
-                    style={{ backgroundColor: '#32AEE2' }}
-                  />
-                  <div 
-                    className="w-0 h-0 ml-05"
-                    style={{
-                      borderLeft: '6px solid #32AEE2',
-                      borderTop: '3px solid transparent',
-                      borderBottom: '3px solid transparent'
-                    }}
-                  />
-                </div>
+              <div className="flex flex-col items-center mb-2 mt-2">
+                <div 
+                  className="w-1 h-3 rounded-full"
+                  style={{ backgroundColor: '#32AEE2' }}
+                />
                 <div className="text-xs text-gray-400">OCPP</div>
+                <div 
+                  className="w-1 h-3 rounded-full"
+                  style={{ backgroundColor: '#32AEE2' }}
+                  />
               </div>
 
               {/* EVSExplorer Server */}
@@ -288,41 +274,27 @@ export function Features({ language }: FeaturesProps) {
               </div>
 
               {/* Arrow */}
-              <div className="block">
-                <div className="flex items-center">
-                  <div 
-                    className="w-0 h-0 mr-05"
-                    style={{
-                      borderRight: '6px solid #32AEE2',
-                      borderTop: '3px solid transparent',
-                      borderBottom: '3px solid transparent'
-                    }}
-                  />
-                  <div 
-                    className="w-6 h-1 rounded-full"
-                    style={{ backgroundColor: '#32AEE2' }}
-                  />
-                  <div 
-                    className="w-0 h-0 ml-05"
-                    style={{
-                      borderLeft: '6px solid #32AEE2',
-                      borderTop: '3px solid transparent',
-                      borderBottom: '3px solid transparent'
-                    }}
-                  />
-                </div>
+              <div className="flex flex-col items-center mb-2 mt-2">
+                <div 
+                  className="w-1 h-3 rounded-full"
+                  style={{ backgroundColor: '#32AEE2' }}
+                />
                 <div className="text-xs text-gray-400">REST API</div>
+                <div 
+                    className="w-1 h-3 rounded-full"
+                    style={{ backgroundColor: '#32AEE2' }}
+                />
               </div>
 
-              {/* Right side - Dashboard and 3rd Party Tool */}
-              <div className="flex flex-col items-center space-y-8">
+              {/* Bottom side - Dashboard and 3rd Party Tool */}
+              <div className="flex flex-row space-x-4">
                 {/* Test Dashboard */}
                 <div className="text-center">
                   <div 
                     className="w-10 h-10 rounded-full flex items-center justify-center mb-3 mx-auto"
                     style={{ backgroundColor: '#0E1E42' }}
                   >
-                    <Monitor className="w-4 h-4 text-white" />
+                  <Monitor className="w-4 h-4 text-white" />
                   </div>
                   <p className="text-xs text-gray-600">Dashboard</p>
                 </div>
@@ -333,10 +305,10 @@ export function Features({ language }: FeaturesProps) {
                     className="w-10 h-10 rounded-full flex items-center justify-center mb-3 mx-auto"
                     style={{ backgroundColor: '#32AEE2' }}
                   >
-                    <Settings className="w-4 h-4 text-white" />
+                  <Settings className="w-4 h-4 text-white" />
                   </div>
                   <p className="text-xs text-gray-600">
-                    {language === 'en' ? '3rd Party Tool' : 'Drittanbieter Test-Werkzeug'}
+                    {language === 'en' ? '3rd Party Tool' : <>Drittanbieter<br/>Test-Werkzeug</>}
                   </p>
                 </div>
               </div>
@@ -344,8 +316,8 @@ export function Features({ language }: FeaturesProps) {
 
             <p className="text-gray-600 max-w-3xl mx-auto">
               {language === 'en' 
-                ? 'Complete WebSocket communication with real-time monitoring, message validation, and comprehensive testing capabilities for OCPP 2.0.1 compliance. Use our built-in dashboard or integrate with your existing 3rd party test tools via our comprehensive REST API.'
-                : 'Vollständige WebSocket-Kommunikation mit Echtzeit-Überwachung, Nachrichten-Validierung und umfassenden Testfunktionen für OCPP 2.0.1 Compliance. Nutzen Sie unser integriertes Dashboard oder integrieren Sie Ihre bestehenden Drittanbieter Test-Werkzeuge mit unsere umfassende REST-API.'
+                ? 'Bi-directional WebSocket communication with real-time monitoring, message validation, and comprehensive testing capabilities for OCPP 2.0.1 compliance. Use our built-in dashboard or integrate with your existing 3rd party test tools via our comprehensive REST API.'
+                : 'Bidirektionale WebSocket-Kommunikation mit Echtzeit-Überwachung, Nachrichten-Validierung und umfassenden Testfunktionen für OCPP 2.0.1 Compliance. Nutzen Sie unser integriertes Dashboard oder integrieren Sie Ihre bestehenden Drittanbieter Test-Werkzeuge mit unserer umfassenden REST-API.'
               }
             </p>
           </div>
